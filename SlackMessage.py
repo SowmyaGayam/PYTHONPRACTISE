@@ -7,7 +7,7 @@ def send_message_to_slack(text):
 
 	try:
 		json_data=json.dumps(post)
-		req=request.Request("https://hooks.slack.com/services/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",
+		req=request.Request("******",
 		data=json_data.encode('ascii'),
 		headers={'Content-Type':'application/json'})
 		resp=request.urlopen(req)
